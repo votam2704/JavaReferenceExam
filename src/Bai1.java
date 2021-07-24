@@ -83,13 +83,7 @@ public class Bai1 extends JFrame implements ActionListener {
         pn.add(new JLabel("     "), gbc);
         
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        gbc.gridx = 0;
-        gbc.gridy = 7;
         gbc.gridwidth = 1;
-        pn.add(new JLabel("     "), gbc);
-        gbc.gridx = 1;
-        gbc.gridy = 7;
-        pn.add(new JLabel("     "), gbc);
         gbc.gridx = 2;
         gbc.gridy = 7;
         pn.add(btnDT, gbc);
@@ -101,13 +95,7 @@ public class Bai1 extends JFrame implements ActionListener {
         pn.add(new JLabel("     "), gbc);
         
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        gbc.gridx = 0;
-        gbc.gridy = 9;
         gbc.gridwidth = 1;
-        pn.add(new JLabel("     "), gbc);
-        gbc.gridx = 1;
-        gbc.gridy = 9;
-        pn.add(new JLabel("     "), gbc);
         gbc.gridx = 2;
         gbc.gridy = 9;
         pn.add(btnCV, gbc);
