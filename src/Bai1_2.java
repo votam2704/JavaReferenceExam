@@ -33,12 +33,15 @@ public class Bai1_2 extends JFrame implements ActionListener {
 			}
 		});
 	}
+	
+	
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnView) {
+			txtA.setText("");
 			if (cbb.getSelectedIndex() == 0) {
 				int n = 1;
-				String s = txt.getText().trim();
+				String s = txt.getText().trim().replaceAll("( )+", " ");
 				for (int i = 0; i < s.length(); i++) {
 					if (s.charAt(i) == ' ') n++;
 				}
@@ -47,7 +50,7 @@ public class Bai1_2 extends JFrame implements ActionListener {
 			if (cbb.getSelectedIndex() == 1) {
 				Boolean isExist = false;
 				List<String> list = new ArrayList<>();
-				String[] l = txt.getText().trim().split(" ");
+				String[] l = txt.getText().trim().replaceAll("( )+", " ").split(" ");
 				list.add(l[0]);
 				for (int i = 1; i < l.length; i++) {
 					isExist = false;
@@ -72,7 +75,7 @@ public class Bai1_2 extends JFrame implements ActionListener {
 				txtA.setText(t);
 			}
 			if (cbb.getSelectedIndex() == 2) {
-				String s = txt.getText().trim();
+				String s = txt.getText().trim().replaceAll("( )+", " ");
 				String temp = "";
 				for (int i = s.length() - 1; i >= 0; i--) {
 					temp += s.charAt(i);

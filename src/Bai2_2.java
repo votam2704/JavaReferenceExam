@@ -110,10 +110,7 @@ public class Bai2_2 {
 					System.out.println(e);
 				}
 				
-				if (isTrue == false) {
-					continue;
-				}
-				else {
+				if (isTrue == true) {
 					float cpn = 0, heso = 0;
 					String select = "select ChiPhiNhan from THANHVIEN where MaThanhVien = '" + info[0] + "'";
 					ResultSet rs = stmt.executeQuery(select);
@@ -147,5 +144,4 @@ public class Bai2_2 {
 		DocFile(f2);
 		UpdateDB();
 	}
-
 }
